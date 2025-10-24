@@ -18,7 +18,10 @@ export const metadata: Metadata = {
       { url: '/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' }
     ]
   },
-  manifest: '/manifest.json'
+  manifest: '/manifest.json',
+  verification: {
+    google: 'ikA4eMUhLTjnxBSzCa1RpgmEg5SL_scysFac4hD4b-k'
+  }
 }
 
 export default function RootLayout({
