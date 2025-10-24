@@ -107,10 +107,30 @@ export default function Home() {
 
       {/* 頁尾 */}
         <footer className="bg-dark-800 text-dark-200 py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-dark-400">
-              © DevKit.
-            </p>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-6">
+              <h3 className="text-lg font-semibold text-dark-100 mb-4">
+                相關網站
+              </h3>
+              <div className="flex justify-center">
+                <a
+                  href="https://toollaboratory.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-medium rounded-lg shadow-lg transition-colors duration-200"
+                >
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                  AI ToolLaboratory
+                </a>
+              </div>
+            </div>
+            <div className="text-center">
+              <p className="text-dark-400">
+                © DevKit.
+              </p>
+            </div>
           </div>
         </footer>
 
