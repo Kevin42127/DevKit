@@ -1,13 +1,14 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://devkitofficial.com' // 替換為你的實際域名
+  const baseUrl = process.env.NODE_ENV === 'production' 
+    ? 'https://devkitofficial.com' 
+    : 'http://localhost:3000'
   
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/private/', '/admin/'],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
   }
