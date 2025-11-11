@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import AdSenseHead from '@/components/AdSenseHead'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -32,9 +31,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-TW">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-7335462712833157" />
+      </head>
       <body className="min-h-screen bg-dark-900">
-        {/* AdSense 腳本將通過 AdSenseHead 組件動態添加到 <head> 中 */}
-        <AdSenseHead />
         {children}
       </body>
     </html>
