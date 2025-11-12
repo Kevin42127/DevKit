@@ -33,6 +33,11 @@ export default function RootLayout({
     <html lang="zh-TW">
       <head>
         <meta name="google-adsense-account" content="ca-pub-7335462712833157" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7335462712833157"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-screen bg-dark-900">
         {children}
